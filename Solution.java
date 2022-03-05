@@ -185,13 +185,33 @@ public class Solution {
   }
 
   public static void soln12() {
-  // and put your code here.
+    int[][] a=new int[][]{{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1}};
+    for(int i=0;i<a.length;i++){
+      for(int j=0; j<a.length;j++){
+        a[i][j]=a[i][j]*5;
+      }
+    }
+    System.out.println("test 5*5:"+Arrays.deepToString(a));
+
+
   }
+
 
   public static void soln13() {
-  // and put your code here.
+    boolean[][] b = new boolean[5][5];
+    int[][] a = new int[][]{
+            {2, 1, 4, 1, 6},
+            {1, 1, 1, 1, 1},
+            {2, 1, 4, 1, 6},
+            {1, 1, 1, 1, 1},
+            {2, 6, 4, 8, 6}};
+    for (int i = 0; i < a.length; i++) {
+      for (int j = 0; j < a.length; j++) {
+        b[i][j] = a[i][j] % 2 == 0;
+      }
+      System.out.println(Arrays.deepToString(b));
+    }
   }
-
   public static void soln14() {
   // and put your code here.
   }
@@ -229,8 +249,8 @@ public class Solution {
   }
 
   public static void main(String[] args){
-    Solution.soln9();
-    Solution.soln11();
+
+    Solution.soln13();
 
 
 
