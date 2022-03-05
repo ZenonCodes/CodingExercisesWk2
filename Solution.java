@@ -4,80 +4,22 @@ public class Solution {
     public static class Fish {
     }
 
-    /**
-     * // Vera
-     * // Find and print the smallest integer in an array
-     * <p>
-     * <p>
-     * Int [a] = [9, 5, 6, 3, 8, 2, 4];
-     * <p>
-     * <p>
-     * //For faster Time complexity call sort first from least to greatest then choose first element. (Don’t remember code from top of head)
-     * <p>
-     * Int minInt = 0;
-     * <p>
-     * For (int i = 0; i < a.length; i++)
-     * {
-     * For (int j = i + 1; j < a.length; j++)
-     * {
-     * minInt = Math.min(a[i],a[j]);
-     * }
-     * }
-     * System.out.println(minInt);
-     * Int min = a[0];
-     * For (int s : a) {
-     * If (s < min){
-     * Min = s;
-     * System.out.println(min);
-     * }
-     * <p>
-     * <p>
-     * Int minInt = infinity
-     * <p>
-     * For (int i = 0; i < a.length; i ++) {
-     * If (array[i] < minInt) {
-     * minInt = a[i]
-     * }
-     * }
-     * System.out.println(minInt);
-     * <p>
-     * <p>
-     * <p>
-     * Allen
-     * <p>
-     * Int min = a[0]
-     * Int max = a[0]
-     * <p>
-     * For (i = 1; i < a.length; i++){
-     * if(max<a[i]){
-     * max=a[i];
-     * }
-     * }
-     * System.out.println(max);
-     * Yay!
-     * // Find and print index of first true element in an array of booleans a = [false, false, false, true, false];
-     * Vera
-     * <p>
-     * <p>
-     * <p>
-     * For (i = 0; i < a.length; i++) {
-     * if (a[i]== true){
-     * system.out.println(i);
-     * break;
-     * }
-     * }
-     * <p>
-     * <p>
-     * <p>
-     * // divide each element of an array by 1.3; a = [0.5, 1.4, 6.7, 123.4 -34.6]
-     * <p>
-     * <p>
-     * For (double s : a) {
-     * s = (s/1.3);
-     * }
-     * System.out.println(Arrays.toString(a)); (print not needed)
-     * }
-     */
+    public static class X {
+        public double balance = 0;
+
+        public X(double b) {
+            this.balance = b;
+        }
+
+        public void getBalance() {
+            if (this.balance <= 1) {
+                System.out.println("Paid Off");
+            } else {
+                System.out.printf("%.2f \n", balance);
+            }
+        }
+    }
+
     public static void soln1() {
         //Mike
         int step = 5;
@@ -217,15 +159,20 @@ public class Solution {
     }
 
     public static boolean soln15(Object j) {
+        System.out.println((j.getClass().equals(Fish.class)));
         return (j.getClass().equals(Fish.class));
     }
 
     public static void soln16() {
-        // and put your code here.
+        X test = new X(10);
+        X test2 = new X(.5);
+        test.getBalance();
+        test2.getBalance();
     }
 
     public static void soln17() {
-        // and put your code here.
+
+
     }
 
     public static void soln18() {
@@ -250,8 +197,7 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        Solution.soln15(new Fish());
-        Solution.soln15("Animal Farm");
+        Solution.soln16();
 
 
     }
